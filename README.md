@@ -52,18 +52,6 @@ El archivo plugins.json contiene toda la metadata de los plugins disponibles:
     "description": "Marketplace para Samaruc IDE - Desarrollo C/Assembly 8-bit"
   },
   "plugins": {
-    "gbdk-toolchain": {
-      "name": "GBDK Toolchain Plugin", 
-      "version": "4.1.1",
-      "description": "Game Boy Development Kit completo",
-      "author": "Desarrollador GBDK",
-      "category": "toolchains",
-      "tags": ["gameboy", "gbdk", "c-compiler"],
-      "downloadUrl": "URL del archivo .jar",
-      "minSamarucVersion": "1.0.0",
-      "dependencies": [],
-      "releaseDate": "2026-04-14"
-    },
     "editor-tiles-gbdk": {
       "name": "Editor de Tiles GBDK",
       "version": "1.0.0", 
