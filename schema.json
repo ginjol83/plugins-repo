@@ -1,0 +1,160 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Samaruc IDE Plugin Marketplace Schema",
+  "description": "Schema para validar plugins.json - Marketplace para desarrollo C/Assembly en sistemas de 8 bits",
+  "type": "object",
+  "required": ["marketplace", "plugins", "categories"],
+  "properties": {
+    "marketplace": {
+      "type": "object",
+      "required": ["name", "version", "lastUpdated"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Nombre del marketplace"
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$",
+          "description": "Versión del marketplace (semver)"
+        },
+        "lastUpdated": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Fecha de última actualización (ISO 8601)"
+        },
+        "description": {
+          "type": "string",
+          "description": "Descripción del marketplace"
+        }
+      }
+    },
+    "plugins": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-z0-9-]+$": {
+          "type": "object",
+          "required": ["name", "version", "description", "author", "category", "downloadUrl", "minSamarucVersion", "releaseDate"],
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Nombre display del plugin"
+            },
+            "version": {
+              "type": "string",
+              "pattern": "^\\d+\\.\\d+\\.\\d+$",
+              "description": "Versión del plugin (semver)"
+            },
+            "description": {
+              "type": "string",
+              "description": "Descripción del plugin"
+            },
+            "author": {
+              "type": "string",
+              "description": "Autor del plugin"
+            },
+            "category": {
+              "type": "string",
+              "enum": ["toolchains", "graphic-tools", "sound-tools", "translation-tools"],
+              "description": "Categoría del plugin específica para desarrollo en 8-bit con Samaruc IDE"
+            },
+            "tags": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Tags para búsqueda"
+            },
+            "downloadUrl": {
+              "type": "string",
+              "format": "uri",
+              "description": "URL de descarga del archivo .jar"
+            },
+            "fileSize": {
+              "type": "string",
+              "description": "Tamaño del archivo"
+            },
+            "minSamarucVersion": {
+              "type": "string",
+              "pattern": "^\\d+\\.\\d+\\.\\d+$",
+              "description": "Versión mínima de Samaruc requerida"
+            },
+            "dependencies": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Lista de dependencias (otros plugins)"
+            },
+            "releaseDate": {
+              "type": "string",
+              "format": "date",
+              "description": "Fecha de lanzamiento (YYYY-MM-DD)"
+            },
+            "changelog": {
+              "type": "string",
+              "description": "Descripción de cambios en esta versión"
+            },
+            "documentation": {
+              "type": "string",
+              "format": "uri",
+              "description": "URL de la documentación"
+            },
+            "license": {
+              "type": "string",
+              "description": "Licencia del plugin"
+            },
+            "homepage": {
+              "type": "string",
+              "format": "uri",
+              "description": "Página web del plugin"
+            },
+            "issues": {
+              "type": "string",
+              "format": "uri",
+              "description": "URL para reportar issues"
+            },
+            "downloads": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Número de descargas"
+            },
+            "rating": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 5,
+              "description": "Rating promedio (0-5)"
+            },
+            "verified": {
+              "type": "boolean",
+              "description": "Si el plugin está verificado oficialmente"
+            }
+          }
+        }
+      }
+    },
+    "categories": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-z]+$": {
+          "type": "object",
+          "required": ["name", "description", "icon"],
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Nombre display de la categoría"
+            },
+            "description": {
+              "type": "string",
+              "description": "Descripción de la categoría"
+            },
+            "icon": {
+              "type": "string",
+              "description": "Emoji o icono de la categoría"
+            }
+          }
+        }
+      }
+    }
+  }
+}

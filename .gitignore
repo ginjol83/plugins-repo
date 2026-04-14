@@ -1,0 +1,28 @@
+# Archivos temporales
+*.tmp
+*.temp
+*.log
+.trash/
+
+# Archivos de IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de build (si los hay)
+build/
+dist/
+target/
+
+# Archivos de configuración local
+.env
+.env.local
+
+# Backups
+*.bak
+*.backup

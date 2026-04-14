@@ -1,0 +1,53 @@
+{
+  "marketplace": {
+    "name": "Samaruc Plugin Marketplace",
+    "version": "1.0.0",
+    "lastUpdated": "2026-04-14T00:00:00Z",
+    "description": "Marketplace de plugins para Samaruc IDE - Desarrollo C/Assembly para sistemas de 8 bits"
+  },
+  "plugins": {
+    "gbdk-toolchain": {
+      "name": "GBDK Toolchain Plugin",
+      "version": "4.1.1",
+      "description": "Game Boy Development Kit - Toolchain completo para desarrollo en Game Boy/Game Boy Color",
+      "author": "Desarrollador GBDK",
+      "category": "toolchains",
+      "tags": ["gameboy", "gbdk", "c-compiler", "8-bit", "nintendo"],
+      "downloadUrl": "https://raw.githubusercontent.com/tu-usuario/plugins-repo/main/plugins/toolchains/gbdk-toolchain-4.1.1.jar",
+      "fileSize": "12.5 MB",
+      "minSamarucVersion": "1.0.0",
+      "dependencies": [],
+      "releaseDate": "2026-04-14",
+      "changelog": "Actualización a GBDK 4.1.1 con mejoras en optimización y nuevas librerías",
+      "documentation": "https://github.com/tu-usuario/plugins-repo/blob/main/docs/gbdk-toolchain.md",
+      "license": "MIT",
+      "homepage": "https://github.com/gbdk-2020/gbdk-2020",
+      "issues": "https://github.com/tu-usuario/plugins-repo/issues",
+      "downloads": 0,
+      "rating": 0,
+      "verified": true
+    }
+  },
+  "categories": {
+    "toolchains": {
+      "name": "Toolchains",
+      "description": "Kits de desarrollo completos (GBDK, Z88DK, CC65, etc.)",
+      "icon": "🔧"
+    },
+    "graphic-tools": {
+      "name": "Herramientas Gráficas", 
+      "description": "Editores de sprites, tiles, mapas y herramientas gráficas",
+      "icon": "🎨"
+    },
+    "sound-tools": {
+      "name": "Herramientas de Sonido",
+      "description": "Editores de música, efectos de sonido y herramientas de audio",
+      "icon": "🎵"
+    },
+    "translation-tools": {
+      "name": "Herramientas de Traducción",
+      "description": "Herramientas para localización y traducción de juegos/software",
+      "icon": "🌐"
+    }
+  }
+}
