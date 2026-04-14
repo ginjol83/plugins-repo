@@ -47,6 +47,27 @@
       "downloads": 0,
       "rating": 0,
       "verified": true
+    },
+    "gb-rom-viewer": {
+      "name": "Game Boy ROM Viewer",
+      "version": "1.0.0",
+      "description": "Visualizador y analizador de ROMs para Game Boy - Herramienta para examinar estructura y contenido de ROMs",
+      "author": "Samaruc Team",
+      "category": "graphic-tools",
+      "tags": ["gameboy", "rom", "viewer", "analyzer", "debugger"],
+      "downloadUrl": "https://raw.githubusercontent.com/ginjol83/plugins-repo/main/plugins/graphic-tools/gb-rom-viewer-1.0.0.jar",
+      "fileSize": "1.4 MB",
+      "minSamarucVersion": "1.0.0",
+      "dependencies": [],
+      "releaseDate": "2026-04-14",
+      "changelog": "Versión inicial del visualizador de ROMs Game Boy",
+      "documentation": "https://github.com/ginjol83/plugins-repo/blob/main/docs/gb-rom-viewer.md",
+      "license": "MIT",
+      "homepage": "https://github.com/ginjol83/plugins-repo",
+      "issues": "https://github.com/ginjol83/plugins-repo/issues",
+      "downloads": 0,
+      "rating": 0,
+      "verified": true
     }
   },
   "categories": {
