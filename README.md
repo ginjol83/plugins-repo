@@ -63,12 +63,48 @@ El archivo plugins.json contiene toda la metadata de los plugins disponibles:
       "minSamarucVersion": "1.0.0",
       "dependencies": [],
       "releaseDate": "2026-04-14"
+    },
+    "editor-tiles-gbdk": {
+      "name": "Editor de Tiles GBDK",
+      "version": "1.0.0", 
+      "description": "Editor de tiles para Game Boy Development Kit",
+      "author": "Samaruc Team",
+      "category": "graphic-tools",
+      "tags": ["gameboy", "tiles", "gbdk", "graphics"],
+      "downloadUrl": "https://raw.githubusercontent.com/tu-usuario/plugins-repo/main/plugins/graphic-tools/editor-tiles-gbdk-1.0.0.jar",
+      "minSamarucVersion": "1.0.0",
+      "dependencies": [],
+      "releaseDate": "2026-04-14"
+    },
+    "lsdpatch-plugin": {
+      "name": "LSDPatch Plugin",
+      "version": "1.0.0",
+      "description": "Plugin para patcheo y modificación de archivos de sonido LSD",
+      "author": "Samaruc Team", 
+      "category": "sound-tools",
+      "tags": ["lsd", "sound", "patch", "chiptune"],
+      "downloadUrl": "https://raw.githubusercontent.com/tu-usuario/plugins-repo/main/plugins/sound-tools/lsdpatch-plugin-1.0.0.jar",
+      "minSamarucVersion": "1.0.0",
+      "dependencies": [],
+      "releaseDate": "2026-04-14"
     }
   },
   "categories": {
     "toolchains": {
       "name": "Toolchains",
       "description": "Kits de desarrollo completos para 8-bit"
+    },
+    "graphic-tools": {
+      "name": "Herramientas Gráficas",
+      "description": "Editores gráficos y herramientas visuales"
+    },
+    "sound-tools": {
+      "name": "Herramientas de Sonido", 
+      "description": "Herramientas de audio y música"
+    },
+    "translation-tools": {
+      "name": "Herramientas de Traducción",
+      "description": "Herramientas de localización"
     }
   }
 }
